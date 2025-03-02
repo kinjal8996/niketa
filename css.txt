@@ -1,0 +1,36 @@
+CSS is the language we use to style an HTML document.
+
+CSS describes how HTML elements should be displayed.
+
+This tutorial will teach you CSS from basic to advanced.
+Css type
+-External CSS
+-Internal CSS
+-Inline CSS
+
+1 bgcolor
+2 text
+3 font
+4 css color
+5 add diff color
+6 opacity
+7 bgimage
+8 border
+9 margin
+10 padding
+11 height and width
+12 outerline
+13 text-decoration
+14 link 
+15The position Property
+There are five different position values:
+-static
+-relative
+-fixed
+-absolute
+-sticky
+16 z index
+17 overflow
+18 float
+19 text align
+20 image align

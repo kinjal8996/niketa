@@ -1,0 +1,13 @@
+Div 
+The <div> element is by default a block element
+<div>	Defines a section in a document (block-level)
+The <div> element is used as a container for other HTML elements.
+Inline-block
+If you change the <div> element's display property from block to inline-block, the <div> elements will no longer add a line break before and after, and will be displayed side by side instead of on top of each other.
+
+
+
+
+
+span
+<span>	Defines a section in a document (inline)

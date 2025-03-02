@@ -1,0 +1,878 @@
+External: For reusable, large scripts or libraries.
+Internal: For page-specific scripts that are not reused elsewhere.
+Inline: For very simple event handlers or quick fixes.
+
+
+helloworld javascript with date and time piker   Event
+
+document.getElementById()= method
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>my first javascript </h1>
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()"> click me on display Date and Time</button>
+    <p id="demo"></p>
+</body>
+</html>
+---------------------------------------------------------------------------------------------------------------------------------
+
+click me change the sentence when u clicked on it
+
+When the user clicks the button labeled "click me", the onclick event fires.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p id="demo">JavaScript can change HTML content.</p>
+
+<button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+
+</body>
+</html>
+
+--------------------------------------------------------------------------------------------------------------------------------
+add css in javascript example
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>What can javascript do??</h2>
+    <p id="demo"> Jvascript can change css of HTML element...</p>
+    <button type="button" onclick="document.getElementById('demo').style.fontSize='35px'">Click Me!!!</button>
+</body>
+</html>
+
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+javascript in head  tag <head>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    function myfunction()
+    {
+        document.getElementById('demo').innerHTML = "Paragraph Change!!!";
+    }
+    </script>
+</head>
+<body>
+    <h2>Demo javascript in Head</h2>
+    <p id="demo">A Paragraph</p>
+    <button type="button" onclick="myfunction()">Try It</button>
+</body>
+</html>
+
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+Javascript in body tag <body>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Demo  Javascript in body</h2>
+    <p id="demo">A paraghraph of javascript</p>
+    <button type="button" onclick="myfunction()"> click me...</button>
+    <script>
+    function myfunction(){
+   document.getElementById('demo').innerHTML = "Paraghraph Changed...." 
+    }
+    </script>
+    
+</body>
+</html>
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------
+Addition using Js
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>My Javascript</h2>
+    <p>Addition using Javascript</p>
+    <p id="demo"></p>
+    <script>
+    document.getElementById('demo').innerHTML = 5 + 6;
+    </script>
+</body>
+</html>
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+using Write() method to change numbers
+document.write():
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>This is my first webpage</h2>
+    <p>using Write method</p>
+    <script>
+        document.write(5+6);
+    </script>
+</body>
+</html>
+
+
+----------------------------------------------------------------------------------------------------------------------------------
+ Addtion using write method in button 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>my WebPage</h2>
+    <p>Addition using Write method</p>
+    <button type="button" onclick="document.write(5 + 6)">Try me!!!</button>
+</body>
+</html>
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------
+ window.alert();
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Alert window using Javascript </h2>
+    <script>
+        window.alert(5 + 6);
+     </script>
+</body>
+</html>
+
+-----------------------------------------------------------------------------------------------------------------------------------
+ console.log() method 
+
+The console.log() method in JavaScript is 
+===== fundamental debugging tool used to print messages to the web console. 
+=====inspect the values of variables, the flow of a program, or any relevant information during development and debugging. 
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Activate Debugging</h2>
+
+<p>F12 on your keyboard will activate debugging.</p>
+<p>Then select "Console" in the debugger menu.</p>
+<p>Then click Run again.</p>
+
+<script>
+console.log(5 + 6);
+</script>
+
+</body>
+</html> 
+
+
+----------------------------------------------------------------------------------------------------------------------------
+
+window.print() method using javascript
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>I want to print this page</h2>
+    <button onclick="window.print()"> This is print</button>
+</body>
+</html>
+
+
+----------------------------------------------------------------------------------------------------------------------------------
+let variable using
+Declares three variables a, b, and c using the let keyword. 
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Statements</h2>
+
+<p>JavaScript statements are separated by semicolons.</p>
+
+<p id="demo1"></p>
+
+<script>
+let a, b, c;
+a = 5;
+b = 6;
+c = a + b;
+document.getElementById("demo1").innerHTML = c;
+</script>
+
+</body>
+</html>
+
+---------------------------------------------------------------------------------------------------------
+JavaScript const
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>JavaScript const</h1>
+    <h3>Declaring the const array</h3>
+    <p id="demo"></p>
+    <script>
+    const cars = ["Saab", "volvo", "BMW"] ;
+    cars[0] = "Toyato";
+    cars.push("Audi");
+    document.getElementById("demo").innerHTML = cars;
+    </script>
+</body>
+</html>
+
+------------------------------------------------------------------------------------------------------
+Operator using javascript
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Operators</h1>
+<h2>The = Operator</h2>
+
+<p id="demo"></p>
+
+<script>
+let x = 10;
+document.getElementById("demo").innerHTML = x;
+</script>
+
+</body>
+</html>
+
+--------------------------------------------------------------------------------------------------------
+Arithmetic Operator
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Arithmetic</h2>
+<p>A typical arithmetic operation takes two numbers and produces a new number.</p>
+
+<p id="demo"></p>
+
+<script>
+let x = 100 + 50;
+document.getElementById("demo").innerHTML = x;
+</script>
+
+</body>
+</html>
+
+--------------------------------------------------------------------------------------------------------------
+
+Creating JavaScript Objects
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Creating JavaScript Objects</h1>
+<h2>Using an Object Literal</h2>
+
+<p id="demo"></p>
+
+<script>
+// Create an Object:
+const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+
+// Display Data from the Object:
+document.getElementById("demo").innerHTML =
+person.firstName + " is " + person.age + " years old.";
+</script>
+
+</body>
+</html>
+
+
+--------------------------------------------------------------------------------------------------
+JavaScript Object Properties
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Object Properties</h1>
+<h2>Adding a new Property</h2>
+
+<p id="demo"></p>
+
+<script>
+const person = {
+  firstname: "John",
+  lastname: "Doe",
+  age: 50,
+  eyecolor: "blue"
+};
+
+person.nationality = "English";
+document.getElementById("demo").innerHTML =
+person.firstname + " is " + person.nationality + ".";
+</script>
+
+</body>
+</html>
+
+
+-----------------------------------------------------------------------------------------------------
+JavaScript Object Methods
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Objects</h1>
+<h2>Object Methods</h2>
+<p>A method is a function definition stored as a property value.</p>
+
+<p id="demo"></p>
+
+<script>
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  id: 5566,
+  fullName: function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+
+document.getElementById("demo").innerHTML = person.fullName();
+</script>
+</body>
+</html>
+
+------------------------------------------------------------------------------------------------------
+JavaScript Object Constructors
+
+<html>
+<body>
+<h1>JavaScript Object Constructors</h1>
+
+<p id="demo"></p>
+
+<script>
+// Constructor Function for Person objects
+function Person(first, last, age, eye) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eye;
+}
+
+// Create a Person object
+const myFather = new Person("John", "Doe", 50, "blue");
+
+// Display age
+document.getElementById("demo").innerHTML =
+"My father is " + myFather.age + "."; 
+</script>
+
+</body>
+</html>
+
+-------------------------------------------------------------------------------------------------------
+ Switch in javascript 
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript switch</h2>
+
+<p id="demo"></p>
+
+<script>
+let day;
+switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+    day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case  6:
+    day = "Saturday";
+}
+document.getElementById("demo").innerHTML = "Today is " + day;
+</script>
+
+</body>
+</html>
+-------------------------------------------------------------------------------------------------------------
+Loop in javascript
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript For Loop</h2>
+
+<p id="demo"></p>
+
+<script>
+const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+
+let text = "";
+for (let i = 0; i < cars.length; i++) {
+  text += cars[i] + "<br>";
+}
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>
+ 
+---------------------------------------------------------------------------------------------------------------
+JavaScript string is zero or more characters written
+JavaScript Strings
+stores a series of characters
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Strings</h1>
+
+<p id="demo"></p>
+
+<script>
+let text = "John Doe";  // String written inside quotes
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>
+----------------------------------------------------------------------------------------------
+string with single '' , and double quotes
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Strings</h1>
+<p>Strings are written inside quotes. You can use single or double quotes:</p>
+
+<p id="demo"></p>
+
+<script>
+let carName1 = "Volvo XC60"; // Double quotes
+let carName2 = 'Volvo XC60'; // Single quotes
+
+document.getElementById("demo").innerHTML =
+carName1 + " " + carName2; 
+</script>
+
+</body>
+</html>
+---------------------------------------------------------------------------------------------
+string methods - length
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Strings</h1>
+<h2>The length Property</h2>
+
+<p>The length of the string is:</p>
+<p id="demo"></p>
+
+<script>
+let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+document.getElementById("demo").innerHTML = text.length;
+</script>
+
+</body>
+</html>
+
+----------------------------------------------------------------------------------------------
+Map  method in javascript 
+It's a powerful method for transforming data within an array, 
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Maps</h1>
+<h2>The new Map Method()</h2>
+
+<p>Creating a map from an array:</p>
+
+<p id="demo"></p>
+
+<script>
+// Create a Map
+const fruits = new Map([
+  ["apples", 500],
+  ["bananas", 300],
+  ["oranges", 200]
+]);
+
+let numb = fruits.get("apples");
+document.getElementById("demo").innerHTML = "There are " + numb + " apples.";
+</script>
+
+</body>
+</html>
+
+
+-------------------------------------------------------------------------------------------------
+get method 
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Maps</h1>
+<h2>The get() Method</h2>
+
+<p id="demo"></p>
+
+<script>
+// Create a Map
+const fruits = new Map([
+  ["apples", 500],
+  ["bananas", 300],
+  ["oranges", 200]
+]);
+
+document.getElementById("demo").innerHTML = fruits.get("apples");
+</script>
+
+</body>
+</html>
+
+
+----------------------------------------------------------------------------------------------------------
+Map.set()
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Maps</h1>
+<h2>The set() Method</h2>
+
+<p id="demo"></p>
+
+<script>
+// Create a Map
+const fruits = new Map();
+
+// Set Map Values
+fruits.set("apples", 500);
+fruits.set("bananas", 300);
+fruits.set("oranges", 200);
+
+let numb = fruits.get("apples");
+document.getElementById("demo").innerHTML = "There are " + numb + " apples.";
+
+</script>
+
+</body>
+</html>
+
+------------------------------------------------------------------------------------------------------------
+
+Map.size
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Maps</h1>
+<h2>The size Property</h2>
+
+<p id="demo"></p>
+
+<script>
+// Create a Map
+const fruits = new Map([
+  ["apples", 500],
+  ["bananas", 300],
+  ["oranges", 200]
+]);
+
+document.getElementById("demo").innerHTML = fruits.size;
+</script>
+
+</body>
+</html>
+
+--------------------------------------------------------------------------------------------------------------
+
+Map.delete()
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Maps</h1>
+<h2>The delete() Method</h2>
+
+<p id="demo"></p>
+
+<script>
+// Create a Map
+const fruits = new Map([
+  ["apples", 500],
+  ["bananas", 300],
+  ["oranges", 200]
+]);
+
+// Delete an Element
+fruits.delete("apples");
+
+document.getElementById("demo").innerHTML = fruits.size;
+</script>
+
+</body>
+</html>
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+map clear();
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Maps</h1>
+<h2>The clear() Method</h2>
+
+<p id="demo"></p>
+
+<script>
+// Create a Map
+const fruits = new Map([
+  ["apples", 500],
+  ["bananas", 300],
+  ["oranges", 200]
+]);
+
+// Clear the Map
+fruits.clear();
+
+document.getElementById("demo").innerHTML = fruits.size;
+</script>
+
+</body>
+</html>
+--------------------------------------------------------------------------------------------------------------------------
+
+Map Has()
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Maps</h1>
+<h2>The map() Method</h2>
+
+<p id="demo"></p>
+
+<script>
+// Create a Map
+const fruits = new Map([
+  ["apples", 500],
+  ["bananas", 300],
+  ["oranges", 200]
+]);
+
+document.getElementById("demo").innerHTML = fruits.has("apples");
+</script>
+
+</body>
+</html>
+
+-------------------------------------------------------------------------------------------------------------------------
+
+Map Foreach()
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Maps</h1>
+<h2>The forEach() Method</h2>
+
+<p id="demo"></p>
+
+<script>
+// Create a Map
+const fruits = new Map([
+  ["apples", 500],
+  ["bananas", 300],
+  ["oranges", 200]
+]);
+
+let text = "";
+fruits.forEach (function(value, key) {
+  text += key + ' = ' + value + "<br>"
+})
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>
+-------------------------------------------------------------------------------------------------------------------------------
+
+Map.entries()
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Maps</h1>
+<h2>The entries() Method</h2>
+
+<p id="demo"></p>
+
+<script>
+// Create a Map
+const fruits = new Map([
+  ["apples", 500],
+  ["bananas", 300],
+  ["oranges", 200]
+]);
+
+let text = "";
+for (const x of fruits.entries()) {
+  text += x + "<br>";
+}
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>
+
+--------------------------------------------------------------------------------------------------------------------------
+
+Map.values()
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Maps</h1>
+<h2>The values() Method</h2>
+
+<p id="demo"></p>
+
+<script>
+// Create a Map
+const fruits = new Map([
+  ["apples", 500],
+  ["bananas", 300],
+  ["oranges", 200]
+]);
+
+let text = "";
+for (const x of fruits.values()) {
+  text += x + "<br>";
+}
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>
+-----------------------------------------------------------------------------------------------------------------------
+
+Objects as Keys in map function
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Maps</h1>
+<p>Being able to use objects as keys is an important Map feature:</p>
+
+<p id="demo"></p>
+
+<script>
+// Create Objects
+const apples = {name: 'Apples'};
+const bananas = {name: 'Bananas'};
+const oranges = {name: 'Oranges'};
+
+// Create a Map
+const fruits = new Map();
+
+// Add the Objects to the Map
+fruits.set(apples, 500);
+fruits.set(bananas, 300);
+fruits.set(oranges, 200);
+
+document.getElementById("demo").innerHTML = fruits.get(apples);
+</script>
+
+</body>
+</html>
+
+
